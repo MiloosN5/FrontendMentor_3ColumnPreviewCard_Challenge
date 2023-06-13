@@ -1,0 +1,9 @@
+@use '../abstracts/' as a;
+
+.cars {
+    &__section {
+        &__desc {
+            @include a.margin('mi-0', 'mb-desc');            
+        }
+    }
+}

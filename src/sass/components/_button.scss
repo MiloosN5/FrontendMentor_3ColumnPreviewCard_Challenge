@@ -1,0 +1,18 @@
+@use '../abstracts/' as a;
+
+.cars {
+    &__section {
+        &__button {
+            @include a.container('w-auto', 'mw-none', 'h-auto', 'very-light-gray');
+            @include a.padding('pi-button', 'pb-button');
+            @include a.border('b-button', 'br-button');
+            @include a.transition('0.5s', 'ease-in-out');
+            @extend %text-center;
+            @extend %display_inlineBlock;
+            @extend %capitalize;
+            &:hover {
+                @extend %btn-hover-transparent;
+            }
+        }
+    }
+}

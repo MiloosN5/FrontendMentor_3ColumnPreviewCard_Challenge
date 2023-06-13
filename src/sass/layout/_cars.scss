@@ -1,0 +1,11 @@
+@use '../abstracts/' as a;
+
+.cars {
+    @include a.container('w-100%', 'mw-cars', 'h-100%', 'void');
+    @include a.grid('grid-template-columns-1fr', 'grid-template-rows-auto', 'grid-gap-0');
+    @include a.border('b-none', 'br-cars');
+    @include a.overflow('o-hidden');
+    @include a.breakpoint('large') {
+        @include a.grid('grid-template-columns-3x1fr', 'grid-template-rows-auto', 'grid-gap-0');
+    }
+}

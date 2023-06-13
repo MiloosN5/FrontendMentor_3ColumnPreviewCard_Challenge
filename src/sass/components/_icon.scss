@@ -1,0 +1,9 @@
+@use '../abstracts/' as a;
+
+.cars {
+    &__section {
+        img {
+            @include a.container('w-icon', 'mw-none', 'h-auto', 'void');
+        }
+    }
+}

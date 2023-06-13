@@ -1,0 +1,10 @@
+@use '../abstracts/' as a;
+
+.cars {
+    &__section {
+        &__title {
+            @include a.margin('mi-0', 'mb-title');
+            @extend %uppercase;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@use 'sass:map';
+@use '../abstracts/' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+//--------------------------------- Font Families ---------------------------------//
+.cars {
+    &__section {
+        &__title {
+            font-family: map.get(a.$fonts, 'ff-Big_Shoulders_Display');
+        }
+    }
+} 
+
+.cars {
+    &__section {
+        &__desc,
+        &__button {
+            font-family: map.get(a.$fonts, 'ff-Lexend_Deca');
+        }
+    }
+}
+
+//--------------------------------- Other Fonts Settings ---------------------------------//
+.cars {
+    &__section {
+        &__title {
+            @include a.font('fs-title', 'fw-700', 'lh-1.5-default', 'very-light-gray', 'ls-normal');         
+        }
+        &__desc {
+            @include a.font('fs-desc', 'fw-400', 'lh-paragraph', 'transparent-white', 'ls-normal');         
+        }
+        &__button {
+            @include a.font('fs-button', 'fw-400', 'lh-1.5-default', 'transparent-white', 'ls-normal'); 
+            &--sedans {
+                color: map.get(a.$colors, 'bright-orange');
+            }
+            &--suvs {
+                color: map.get(a.$colors, 'dark-cyan');
+            }
+            &--luxury {
+                color: map.get(a.$colors, 'very-dark-cyan');
+            }            
+        }
+    }
+}

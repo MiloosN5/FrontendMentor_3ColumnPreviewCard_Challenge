@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use '../abstracts' as a;
+
+body {
+    @include a.container('w-100%', 'mw-none', 'h-100%', 'very-light-gray');
+    @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+    @include a.padding('pi-body', 'pb-0');
+    @include a.breakpoint('large') {
+        padding-block: map.get(a.$padding, 'pb-body-desktop');
+        justify-content: map.get(a.$flex, 'fjc-start');
+    }
+}

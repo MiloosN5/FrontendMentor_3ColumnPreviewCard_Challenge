@@ -1,0 +1,16 @@
+@use '../abstracts/' as a;
+
+.cars {
+    &__section {
+        @include a.padding('pi-car', 'pb-car');
+        &--sedans {
+            @include a.container('w-100%', 'mw-none', 'h-100%', 'bright-orange');
+        }
+        &--suvs {
+            @include a.container('w-100%', 'mw-none', 'h-100%', 'dark-cyan');
+        }
+        &--luxury {
+            @include a.container('w-100%', 'mw-none', 'h-100%', 'very-dark-cyan');
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use 'variables' as v;
+
+//----------------------- BUTTON -----------------------//
+%btn-hover-transparent {
+    background-color: map.get(v.$colors, 'void');
+    color: map.get(v.$colors, 'very-light-gray');
+}
+
+//----------------------- FONT -----------------------//
+%text-center {
+    text-align: map.get(v.$text-aligns, 'ta-center');
+}
+
+%uppercase {
+    text-transform: uppercase;
+}
+
+%capitalize {
+    text-transform: capitalize;
+}
+
+//----------------------- DISPLAY -----------------------//
+%display_inlineBlock {
+    display: inline-block;
+}
+
