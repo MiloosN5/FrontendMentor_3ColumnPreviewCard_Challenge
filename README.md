@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 <div>
-  <img src="solution_images/solution_375mobile.jpg" width="auto" height="400" src="solution on mobile view"/>
-  <img src="solution_images/solution_1440desktop.jpg" width="auto" height="400" src="solution on desktop view"/>
+  <img src="solution_images/Solution_375mobile.jpg" width="auto" height="400" src="solution on mobile view"/>
+  <img src="solution_images/Solution_1440desktop.jpg" width="auto" height="400" src="solution on desktop view"/>
 </div>
 
 ### Links
 
-- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_StatsPreviewCard_Challenge)
+- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_3ColumnPreviewCard_Challenge)
 - Live Site URL: [My live site URL](https://miloosn5.github.io/FrontendMentor_StatsPreviewCard_Challenge/)
 
 
